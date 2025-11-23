@@ -76,6 +76,19 @@ div.wrapper
     ...
 ```
 
+## Layout Design
+<kbd><img width="200" alt="Login Page" title="Login Page" src="https://github.com/user-attachments/assets/db43bbd3-6642-4587-877e-f5bb59a3b3df" /></kbd>
+<kbd><img width="200" alt="Home Page" title="Home Page" src="https://github.com/user-attachments/assets/f188acd1-f9a7-4d96-960c-c0346211ad03" /></kbd>
+<kbd><img width="200" alt="Navigation Menu"  title="Navigation Menu" src="https://github.com/user-attachments/assets/48667349-804c-49f3-8a92-2fe93e321302" /></kbd>
+<kbd><img width="200" alt="Cookie Preferences" title="Cookie Preferences" src="https://github.com/user-attachments/assets/6acfc90f-b633-4be1-9f2b-7073e72402ea" /></kbd>
+<kbd><img width="200" alt="Contact Us Page" title="Contact Us Page" src="https://github.com/user-attachments/assets/397bc58d-17ca-4045-99d2-063557cb579c" /></kbd>
+<kbd><img width="200" alt="Contact Us FAQs Modal" title="Contact Us FAQs Modal" src="https://github.com/user-attachments/assets/77f22305-0233-4344-a308-1db4a53c4d90" /></kbd>
+<kbd><img width="200" alt="My Account Page" title="My Account Page" src="https://github.com/user-attachments/assets/41794d86-7f97-49d4-a93c-c39aba19739f" /></kbd>
+<kbd><img width="200" alt="Products Page" title="Products Page" src="https://github.com/user-attachments/assets/e72be8b6-37dd-468e-afd2-2194a06b22a0" /></kbd>
+<kbd><img width="200" alt="Product Details Page" title="Product Details Page" src="https://github.com/user-attachments/assets/1ddafe37-1a26-4754-b8a0-8b0ac83caa50" /></kbd>
+<kbd><img width="200" alt="Orders Page" title="Orders Page" src="https://github.com/user-attachments/assets/bdf2ea57-37c9-400e-9c62-9c1b2c499002" /></kbd>
+<kbd><img width="200"  alt="Order Detail Page" title="Order Detail Page" src="https://github.com/user-attachments/assets/e5e6d67a-4769-42c9-9611-4b2f22439fa2" /></kbd>
+
 ## Authors
 - [**@kappytown**](https://github.com/kappytown)
 
