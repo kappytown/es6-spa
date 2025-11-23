@@ -5,6 +5,7 @@ import Modal from './../utils/Modal.js';
 import pubsub from './../utils/PubSub.js';
 import templateManager from './../utils/TemplateManager.js';
 import viewManager from './../ViewManager.js';
+import cookieBanner from './../utils/CookieBanner.js';
 
 export default class RouteController {
 	/**
@@ -141,7 +142,9 @@ export default class RouteController {
 	/**
 	 * 
 	 */
-	gotoCookiePreferences() {}
+	gotoCookiePreferences() {
+		cookieBanner.showCookieConsent();
+	}
 
 	/**
 	 * Loads the policy template and displays it in a modal window
