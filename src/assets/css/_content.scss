@@ -1,0 +1,99 @@
+/*	============================================================
+	Main content styles
+	============================================================ */
+main {
+	flex: 1;
+
+	#content {
+		padding: 2rem 0;
+
+		p.small.note {
+			border: 1px solid;
+			border-radius: .5rem;
+			padding: .5rem;
+			background-color: $color_lt_gray;
+		}
+
+		>div {
+			display: none;
+
+			&.active {
+				display: block;
+			}
+
+			>div>h1:first-child {
+				color: $color_logo_blue;
+				font-size: 2.6em;
+				/* fallback if vw is not supported */
+				font-size: 7.5vw;
+				/* Value should be tested against longest title */
+			}
+		}
+
+		.error {
+			display: none;
+			border: 1px solid #dc3545;
+			padding: 1rem;
+			background-color: #ffeeee;
+			border-radius: .5rem;
+			text-align: center;
+			font-size: .9em;
+			color: var(--ot-color_error_red);
+
+			&.success {
+				color: var(--ot-color_success_green);
+				border-color: var(--ot-color_success_green);
+				background-color: #ebffeb;
+			}
+		}
+	}
+
+	// Prevent background color changing while scrolling on a mobile device
+	@media (hover: none) {
+		#content .row.data:hover {
+			background-color: inherit !important;
+		}
+	}
+
+	@media screen and (min-width:500px) {
+		#content>div>div>h1:first-child {
+			font-size: 2.6em !important;
+			/* Stop sizing text after screen width >= 500px */
+		}
+	}
+
+	// breadcrumb styles
+	.breadcrumb {
+		color: var(--bs-tertiary-color);
+
+		a {
+			color: var(--bs-tertiary-color);
+		}
+
+		.divider {
+			padding: 0 .5rem;
+		}
+	}
+}
+
+#cookieConsentBanner {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #5c606c;
+	color: #fff;
+	padding: 1.5rem 2rem;;
+	text-align: center;
+	z-index: 1040;
+	box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+
+	&.hidden {
+		display: none;
+	}
+}

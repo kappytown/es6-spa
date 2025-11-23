@@ -1,0 +1,17 @@
+<% orders.forEach(order => { %>
+	<article class="order shadow p-3 mb-2 rounded" data-id="<%= order.id %>">
+		<p class="mb-2">
+			<strong>Address:</strong><br />
+			<%= order.shipping_address %>
+		</p>
+		<p ckass="mb-2">
+			<strong>Price: </strong> $<%= order.total %>
+		</p>
+		<p class="mb-2">
+			<strong>Status:</strong> <span style="color: var(--bs-tertiary-color);"><%= order.status %></span>
+		</p>
+		<p class="mb-2">
+			<strong>Created:</strong> <%= order.created_at %>
+		</p>
+	</article>
+<% }); %>

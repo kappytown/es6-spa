@@ -1,0 +1,128 @@
+/*	============================================================
+	Main header and navigation styles
+	============================================================ */
+/*	============================================================
+	Main header and navigation styles
+	============================================================ */
+header.header {
+	background-color: var(--ot-color_drk_gray);
+	padding: 1rem;
+	max-height: 5rem;
+
+	.logo {
+		font-size: 1.5em;
+		font-family: var(--ot-font-family);
+		white-space: nowrap;
+
+		>img {
+			width: 2.5rem;
+			margin-right: .5rem;
+		}
+
+		.simple {
+			color: var(--ot-color_logo_gray);
+		}
+
+		.app {
+			color: var(--ot-color_logo_blue);
+		}
+	}
+
+	.hamburger {
+		img {
+			width: 3rem;
+			height: auto;
+			cursor: pointer;
+		}
+	}
+}
+
+// Hamburger menu styles
+#menu {
+	position: fixed;
+	min-width: 20rem;
+	height: calc(100% - 5rem);
+	background-color: var(--ot-white);
+	right: -25rem;
+	top: 5rem;
+	overflow-y: auto;
+	box-shadow: #000 0 0 0 0;
+	z-index: 1000;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+
+	&.open {
+		right: 0;
+		box-shadow: #000 0 0 .5rem 0;
+	}
+
+	ul {
+		width: 100%;
+		padding: 0;
+		margin: 0 0 1rem 0;
+		font-size: var(--ot-font-size);
+		text-align: left;
+		list-style: none;
+
+		li {
+			border-bottom: .1rem solid #bbb;
+
+			a {
+				text-decoration: none;
+				display: block;
+				color: var(--ot-primary-gray);
+				cursor: pointer;
+
+				&:hover:not(.active):not(.category) {
+					background-color: var(--ot-gray-100);
+				}
+
+				&.active {
+					background-color: #d4d4d4;
+				}
+			}
+
+			&.category {
+				background-color: var(--ot-primary-gray);
+				color: var(--ot-white);
+			}
+
+			&:not(.divider)>div,
+			&:not(.divider)>a {
+				padding: .7rem 1rem;
+				font-size: 1.2rem;
+			}
+		}
+	}
+}
+
+// Date updated styles
+.date-last-updated {
+	background-color: var(--ot-gray-100);
+	align-items: center;
+	height: 3rem;
+	font-size: 1.2rem;
+	border-bottom: .1rem solid var(--ot-gray-300);
+}
+
+// Back button for all page views that will lay over the last updated div
+.nav-back {
+	position: absolute;
+	display: flex;
+	top: -5rem;
+	height: calc(3rem - .1rem);
+	width: calc(100% - var(--bs-gutter-x));
+	align-items: center;
+	font-size: 1em;
+	background-color: #efefef;
+	z-index: 1;
+
+	a:link,
+	a:visited,
+	a:hover,
+	a:active {
+		text-decoration: none;
+	}
+}

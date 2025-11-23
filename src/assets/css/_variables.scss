@@ -1,0 +1,44 @@
+*:root {
+	--ot-primary-gray: #5c606c;
+	--ot-primary-gray-lt: #cdd0c7;
+	--ot-primary-green: #4fc0b2;
+	--ot-primary-orange: #f38c5c;
+	--ot-gray-100: #eee;
+	--ot-gray-200: #ddd;
+	--ot-gray-300: #ccc;
+	--ot-gray-400: #bbb;
+	--ot-gray-500: #aaa;
+	--ot-gray-600: #999;
+	--ot-gray-700: #888;
+	--ot-gray-800: #777;
+	--ot-gray-900: #666;
+	--ot-blue: #337ab7;
+	--ot-red: #d7403a;
+	--ot-red-dark: #900;
+	--ot-green: #007600;
+	--ot-white: #fff;
+
+	--ot-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	// --ot-logo-font-family: Georgia,Verdana,Arial;
+	--ot-font-size: 1.4rem; /* 14px */
+	--ot-link-color: var(--ot-blue);
+	--ot-border: .1rem solid var(--ot-gray-300);
+
+	/* NEW */
+	//--ot-font-family: Georgia, Verdana, Arial;
+	--ot-color_drk_gray: #5c606c;
+	--ot-color_lt_gray: #efefef;
+	--ot-color_logo_blue: #00bff2;
+	--ot-color_logo_gray: #cdd0c7;
+	--ot-color_white: #fff;
+	--ot-color_black: #000;
+	--ot-color_error_red: #dc3545;
+	--ot-color_success_green: #007600;
+}
+$font-family: Georgia, Verdana, Arial;
+$color_drk_gray: #5c606c;
+$color_lt_gray: #efefef;
+$color_logo_blue: #00bff2;
+$color_logo_gray: #cdd0c7;
+$color_white: #fff;
+$color_black: #000;

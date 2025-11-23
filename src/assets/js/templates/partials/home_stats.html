@@ -1,0 +1,40 @@
+<% if (data) { %>
+	<div class="row mb-5">
+		<div class="col-12 col-sm-6 col-lg-3">
+			<div class="card shadow-lg border-0 bg-info-subtle p-3">
+				<div class="card-body text-center p-0">
+					<div class="stat-icon mb-3 fs-1">📦</div>
+					<p class="text-muted mb-2 small">Total Orders</p>
+					<h2 class="mb-0" id="totalOrders"><%= data.totalOrders %></h2>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-sm-6 col-lg-3">
+			<div class="card shadow-lg border-0 bg-info-subtle p-3">
+				<div class="card-body text-center p-0">
+					<div class="stat-icon mb-3 fs-1">💰</div>
+					<p class="text-muted mb-2 small">Total Spent</p>
+					<h2 class="mb-0" id="totalSpent"><%= Intl.NumberFormat('en-US', {style: 'currency',currency: 'USD'}).format(data.totalSpent) %></h2>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-sm-6 col-lg-3">
+			<div class="card shadow-lg border-0 bg-info-subtle p-3">
+				<div class="card-body text-center p-0">
+					<div class="stat-icon mb-3 fs-1">📊</div>
+					<p class="text-muted mb-2 small">Average Order</p>
+					<h2 class="mb-0" id="avgOrder"><%= Intl.NumberFormat('en-US', {style: 'currency',currency: 'USD'}).format(data.averageOrder) %></h2>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-sm-6 col-lg-3">
+			<div class="card shadow-lg border-0 bg-info-subtle p-3">
+				<div class="card-body text-center p-0">
+					<div class="stat-icon mb-3 fs-1">🎯</div>
+					<p class="text-muted mb-2 small">Items Purchased</p>
+					<h2 class="mb-0" id="totalItems"><%= data.numItems %></h2>
+				</div>
+			</div>
+		</div>
+	</div>
+<% } %>

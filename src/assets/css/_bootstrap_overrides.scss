@@ -1,0 +1,18 @@
+/*	============================================================
+	Boostrap overrides styles
+	============================================================ */
+.bi.bi-bold {
+	-webkit-text-stroke: 1px;
+}
+
+.spinner-border {
+	border-width: .3rem;
+	width: 2rem;
+	height: 2rem;
+	vertical-align: middle;
+	margin-left: .5rem;
+}
+
+.form-select, .form-control, .btn {
+  font-size: 1.4rem;
+}

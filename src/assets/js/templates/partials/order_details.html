@@ -1,0 +1,16 @@
+<article>
+	<p class="mb-2">
+		<strong>Status:</strong> <%= order[0].status %>
+	</p>
+	<p class="mb-2 breadcrumb">
+		<a href="#" data-route="orders">Orders</a> <span class="divider">/</span> <a href="#" data-route="orders/<%= order[0].status %>">
+			<%= order[0].status %>
+		</a>
+	</p>
+	<% order.map(item => { %>
+		<p class="mb-2">(<%= item.quantity %>) <%= item.product %> - $<%= item.price %></p>
+	<% }) %>
+	<p class="mb-2">
+		<strong>Total:</strong> <%= order[0].total %>
+	</p>
+</article>

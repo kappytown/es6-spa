@@ -1,0 +1,37 @@
+<div class="col-12 col-sm-10 offset-sm-1">
+	<h1>Contact Us</h1>
+
+	<div class="did-you-know mb-3">
+		<p>Did you know that most of your questions can be answered from within our FAQs popup?</p>
+		<button class="btn btn-primary btn-sm show-faqs">Show FAQs</button>
+	</div>
+
+	<div class="error mb-5 hidden"></div>
+
+	<form id="contact-form">
+		<!-- Name input-->
+		<div class="mb-3">
+			<label class="form-label" for="name">Name</label>
+			<input id="name" name="name" type="text" class="form-control" required>
+		</div>
+
+		<!-- Email input-->
+		<div class="mb-3">
+			<label class="form-label" for="email">E-mail</label>
+			<input id="email" name="email" type="text" class="form-control" required>
+		</div>
+
+		<!-- Message body -->
+		<div class="mb-3">
+			<label class="form-label" for="message">Message</label>
+			<textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+		</div>
+
+		<!-- Form actions -->
+		<div class="form-group">
+			<div class="col">
+				<button type="button" class="btn btn-primary submit">Submit</button>
+			</div>
+		</div>
+	</form>
+</div>

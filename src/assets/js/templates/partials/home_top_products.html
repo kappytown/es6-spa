@@ -1,0 +1,21 @@
+<div class="row mb-5">
+	<div class="col-12">
+		<div class="card shadow-lg border-0 p-3 bg-info-subtle">
+			<div class="card-body">
+				<h3 class="card-title mb-4">Top Products You've Purchased</h3>
+				<% if (data?.length > 0) { %>
+				<div class="list-group" id="topProducts">
+					<% data.forEach(product => { %>
+					<div class="list-group-item d-flex mb-1 p-3 justify-content-between align-items-center">
+						<span class="fw-semibold"><%= product.name %></span>
+						<span class="badge bg-primary rounded-pill"><%= product.quantity %>x • <%= Intl.NumberFormat('en-US', {style: 'currency',currency: 'USD'}).format(product.price) %></span>
+					</div>
+					<% }) %>
+				</div>
+				<% } else { %>
+				<strong>No top products found.</strong>
+				<% } %>
+			</div>
+		</div>
+	</div>
+</div>

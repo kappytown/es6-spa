@@ -1,0 +1,7 @@
+git
+.idea
+.sass-cache
+/build
+/node_modules
+/readme-images
+package-lock.json

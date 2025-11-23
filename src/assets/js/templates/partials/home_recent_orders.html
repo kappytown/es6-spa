@@ -1,0 +1,42 @@
+<div class="card shadow-lg border-0 p-3 bg-info-subtle">
+	<div class="card-body">
+		<h3 class="card-title mb-4">Recent Orders</h3>
+		<div class="table-responsive">
+			<% if (data?.length > 0) { %>
+			<table class="table table-hover align-middle">
+				<thead class="table-light">
+					<tr>
+						<th class="p-3">Order ID</th>
+						<th class="p-3">Date</th>
+						<th class="p-3">Items</th>
+						<th class="p-3">Total</th>
+						<th class="p-3">Status</th>
+					</tr>
+				</thead>
+				<tbody id="ordersTableBody">
+					<% 
+					data.forEach(order => {
+						const badgeClass = {
+							delivered: 'success',
+							shipped: 'primary',
+							processing: 'warning',
+							pending: 'secondary',
+							cancelled: 'danger'
+						}[order.status] || 'secondary';
+						%>
+						<tr data-id="<%= order.id %>">
+							<td class="p-3"><strong><%= order.id %></strong></td>
+							<td class="p-3"><%= order.date %></td>
+							<td class="p-3"><%= order.numItems %> items</td>
+							<td class="p-3"><strong><%= Intl.NumberFormat('en-US', {style: 'currency',currency: 'USD'}).format(order.total) %></strong></td>
+							<td class="p-3"><span class="badge bg-<%= badgeClass %>"><%= order.status %></span></td>
+						</tr>
+					<% }) %>
+				</tbody>
+			</table>
+			<% }  else { %>
+			<strong>No recent orders found.</strong>
+			<% } %>
+		</div>
+	</div>
+</div>
