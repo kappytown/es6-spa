@@ -41,7 +41,7 @@ const utils = {
 			if ($el[0]) {
 				$el.remove();
 			}
-			$el = $(`<div class="loading"><div class="wrapper"><div cleass="message">${message}</div><div class="spinner-border text-primary" role="status"></div></div>`);
+			$el = $(`<div class="loading"><div class="wrapper"><div class="message">${message}</div><div class="spinner-border text-primary" role="status"></div></div></div>`);
 			$el.appendTo($context);
 		},
 
